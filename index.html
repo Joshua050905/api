@@ -9,7 +9,7 @@
     <h1>Series</h1>
     <ul id="series_lista"></ul>
     <script>
-        fetch().then(response=> response.json()).then(data => {
+        fetch(https://joshua050905.github.io/api/).then(response=> response.json()).then(data => {
             console.log('Datos recibidos:', data);
             const SERIES = document.getElementById("series-lista");
             data.forEach(serie => {
