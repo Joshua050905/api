@@ -1,0 +1,23 @@
+[
+{
+"id":1,
+"nombre": "Drop Box",
+"categoría": "Suspenso",
+"descripción": "Actriz principar Sandra Bullock",
+"fecha": "0204-11-19T06:00:00.00z"
+},
+{
+"id":3,
+"nombre": "No mires atrás",
+"categoría": "Ficción",
+"descripción": "Actriz principar Julia Roberts",
+"fecha": "0204-11-14T06:00:00.00z"
+},
+{
+"id":1,
+"nombre": "La casa de papel",
+"categoría": "Drama",
+"descripción": "Origen Español",
+"fecha": "0204-11-18T06:00:00.00z"
+}
+]
