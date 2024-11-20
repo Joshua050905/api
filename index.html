@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consumo de JSON</title>
+</head>
+<body>
+    <h1>Series</h1>
+    <ul id="series_lista"></ul>
+    <script>
+        fetch().then(response=> response.json()).then(data => {
+            console.log('Datos recibidos:', data);
+            const SERIES = document.getElementById("series-lista");
+            data.forEach(serie => {
+                const LIST_ITEM = document.createElement('li');
+                LIST_ITEM.textContent = `${serie.nombre} (${serie.categoria})`;
+                SERIES.appendChild(LIST_ITEM);
+            });
+        }).catch(error => console.error('Error al consumir el JSON:', error));
+    </script>
+</body>
+</html>
