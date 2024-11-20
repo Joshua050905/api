@@ -16,7 +16,7 @@
             const SERIES = document.getElementById("series_lista");
             data.forEach(serie => {
                 const LIST_ITEM = document.createElement('li');
-                LIST_ITEM.textContent = `${serie.nombre} (${serie.categoria}) descripcion:${serie.descripcion}`;
+                LIST_ITEM.textContent = `${serie.nombre} (${serie.categoria}) ${serie.descripcion}`;
                 SERIES.appendChild(LIST_ITEM);
             });
         }).catch(error => console.error('Error al consumir el JSON:', error));
